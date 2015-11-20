@@ -1,0 +1,14 @@
+eureka:
+  image: netflixoss/eureka:1.1.147
+  ports:
+    - "8080:8080"
+
+turbine:
+  image: netflixoss/java:8
+  ports:
+      - "8000:8080"
+  volumes:
+      - ./build/install/turbine:/code
+  links:
+      - eureka:eureka
+  command: /code/bin/turbine com.scmspain.turbine.Application
