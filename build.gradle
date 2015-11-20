@@ -11,6 +11,7 @@ mainClassName = "com.scmspain.turbine.Application"
 
 dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.0.3.RELEASE'
+    compile 'org.springframework.cloud:spring-cloud-netflix-turbine:1.0.3.RELEASE'
 }
 
 buildscript {
