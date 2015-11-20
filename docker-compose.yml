@@ -11,4 +11,6 @@ turbine:
       - ./build/install/turbine:/code
   links:
       - eureka:eureka
+  environment:
+    CLOUD_EUREKA: http://eureka:8080/eureka/v2/
   command: /code/bin/turbine com.scmspain.turbine.Application
