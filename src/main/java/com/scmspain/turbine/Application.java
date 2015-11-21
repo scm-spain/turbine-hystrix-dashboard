@@ -14,14 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @ComponentScan
 @EnableAutoConfiguration
 @EnableDiscoveryClient
-@RestController
 @EnableHystrixDashboard
 @EnableTurbine
 public class Application {
-  @RequestMapping("/")
-  public String home() {
-    return "Hello world";
-  }
 
   public static void main(String[] args) {
     new SpringApplicationBuilder(Application.class)

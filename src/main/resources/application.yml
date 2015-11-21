@@ -3,7 +3,6 @@ eureka:
     serviceUrl:
       defaultZone: ${CLOUD_EUREKA}
 
-#turbine:
-#  aggregator:
-#    clusterConfig: MICROSERVICESCLIENT
-#  appConfig: microservicesclient
+turbine:
+  appConfig: ${SERVICES}
+  clusterNameExpression: new String("default")

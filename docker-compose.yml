@@ -13,4 +13,5 @@ turbine:
       - eureka:eureka
   environment:
     CLOUD_EUREKA: http://eureka:8080/eureka/v2/
+    SERVICES: ptaadinsertion,ptacategorymatcher,ptaformbuilder,ptaformvalidator,ptaphotouploader
   command: /code/bin/turbine com.scmspain.turbine.Application
