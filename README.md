@@ -5,7 +5,7 @@ Expose a Hystrix Dashboard and Turbine Stream.
 Install the application:
 
 ```bash
-$ ./gradle clean installDist
+$ ./gradlew clean installDist
 ```
 
 Launch the main application:
