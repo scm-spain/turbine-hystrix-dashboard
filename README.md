@@ -16,7 +16,7 @@ $ export CLOUD_EUREKA="http://urltoeureka:8080/eureka/v2/"; \
   ./build/install/turbine/bin/turbine com.scmspain.turbine.Application
 ```
 
-Or you can run it using Docker:
+Or you can run it using [our public Docker image](https://hub.docker.com/r/schibstedspain/turbine-hystrix-dashboard):
 
 ```bash
 $ export CLOUD_EUREKA="http://urltoeureka:8080/eureka/v2/"; \
