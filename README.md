@@ -33,3 +33,14 @@ Once the application is running, you can check:
 * **Turbine Stream**: http://localhost:8080/turbine.stream
 
 If you started the app using docker, change localhost with the IP of your docker machine.
+
+## Development
+The build folder is comitted in the repository so [the Docker image can be automatically generated](https://hub.docker.com/r/schibstedspain/turbine-hystrix-dashboard/). If you change anything from the repository, remember to re-compile and push the changes in the build folder too.
+
+```bash
+$ git checkout -b your_branch
+$ ./gradlew clean installDist
+$ git add build/
+$ git commit -m "Update compiled code"
+$ git push origin your_branch
+```
