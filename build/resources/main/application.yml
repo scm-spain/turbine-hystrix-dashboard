@@ -1,0 +1,8 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${CLOUD_EUREKA}
+
+turbine:
+  appConfig: ${SERVICES}
+  clusterNameExpression: new String("default")
