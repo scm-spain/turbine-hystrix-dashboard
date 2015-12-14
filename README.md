@@ -35,12 +35,4 @@ Once the application is running, you can check:
 If you started the app using docker, change localhost with the IP of your docker machine.
 
 ## Development
-The build folder is comitted in the repository so [the Docker image can be automatically generated](https://hub.docker.com/r/schibstedspain/turbine-hystrix-dashboard/). If you change anything from the repository, remember to re-compile and push the changes in the build folder too.
-
-```bash
-$ git checkout -b your_branch
-$ ./gradlew clean installDist
-$ git add build/
-$ git commit -m "Update compiled code"
-$ git push origin your_branch
-```
+If you change anything from the repository, remember to re-publish [the Docker image](https://hub.docker.com/r/schibstedspain/turbine-hystrix-dashboard/) using a CI server like Jenkins or Travis.
